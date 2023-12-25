@@ -6,7 +6,7 @@
 
 Now Starting the frontend
 1) cd frontend
-2) npm start  (Project will run on local host 3000)
+2) npm start
 
 | About the website |
 
