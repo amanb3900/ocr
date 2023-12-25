@@ -16,7 +16,7 @@ const YourComponent = () => {
     const fetchIds = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/extract/getIds"
+          "https://ocr1-29e7.onrender.com/api/extract/getIds"
         );
         const data = await response.json();
         setData(data);
@@ -30,7 +30,7 @@ const YourComponent = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/extract/delete/${id}`, {
+      await fetch(`https://ocr1-29e7.onrender.com/api/extract/delete/${id}`, {
         method: "DELETE",
       });
       const updatedData = data.filter((item) => item.id !== id);
@@ -42,7 +42,7 @@ const YourComponent = () => {
 
   const handleUpdate = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/extract/update/${id}`, {
+      await fetch(`https://ocr1-29e7.onrender.com/api/extract/update/${id}`, {
         method: "PUT",
         body: JSON.stringify(formData),
         headers: {
