@@ -25,7 +25,7 @@ const ImageUploader = () => {
     <div className="image-uploader-container">
     <h1>Optical Character Recognization</h1>
     <h4>(First Upload an Image)</h4>
-    <form action="http://localhost:5000/api/extract/add" method="post" enctype="multipart/form-data">
+    <form action="https://ocr1-29e7.onrender.com/api/extract/add" method="post" enctype="multipart/form-data">
       <label className="upload-image">
      
         <input name='uploaded_file' id='uploaded_file' type="file" onChange={handleImageChange} accept="image/*" style={{ display: 'none' }} />
